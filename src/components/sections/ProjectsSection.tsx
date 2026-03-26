@@ -21,7 +21,7 @@ const projects: Project[] = [
     id: 1,
     title: "SnapCart: Grocery Delivery Platform",
     category: "Full Stack",
-    image: "https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&q=80&w=800",
+    image: "https://res.cloudinary.com/dgonoeiyr/image/upload/v1774544161/Screenshot_2026-03-26_200351_dwznf0.png",
     description: "A scalable delivery platform with interactive maps and sub-second live location tracking via Socket.io.",
     tech: ["TypeScript", "Next.js", "Socket.io", "Tailwind CSS","Leaflet","MongoDB"],
     github: "https://github.com/vikram-bajya",
@@ -93,7 +93,7 @@ function TiltCard({ project }: { project: Project }) {
           <motion.img 
             src={project.image} 
             alt={project.title}
-            className="w-full h-full object-cover group-hover/image:scale-110 transition-transform duration-500"
+            className="w-full h-full object-fill group-hover/image:scale-110 transition-transform duration-500"
             style={{ transform: "translateZ(30px)" }}
           />
         </a>
